@@ -1,6 +1,3 @@
-Claro, vou adicionar ícones e modernizar ainda mais o design. Aqui está o código atualizado:
-
-```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -27,6 +24,13 @@ Claro, vou adicionar ícones e modernizar ainda mais o design. Aqui está o cód
             font-size: 3em;
             margin-bottom: 0.5em;
             color: #4a90e2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 .icon {
+            margin-right: 0.2em;
+            color: #4a90e2;
         }
         p {
             font-size: 1.2em;
@@ -48,7 +52,7 @@ Claro, vou adicionar ícones e modernizar ainda mais o design. Aqui está o cód
             background-color: #357ab7;
             transform: scale(1.05);
         }
-        .icon {
+        .link-icon {
             margin-right: 8px;
         }
         footer {
@@ -59,17 +63,15 @@ Claro, vou adicionar ícones e modernizar ainda mais o design. Aqui está o cód
     </style>
 </head>
 <body>
-    <h1>Top 100 Avaliações</h1>
+    <h1><i class="fas fa-star icon"></i>Top 100 Avaliações</h1>
     <p>Aqui você encontra os top 100 em filmes, músicas e nomes.</p>
-    <a href="https://tinyhost.pw/list/6CbfnVhUB"><i class="fas fa-male icon"></i>Nomes Masculinos</a>
-    <a href="https://tinyhost.pw/list/LkNOVX6Lw"><i class="fas fa-horoscope icon"></i>Horóscopo Diário</a>
-    <a href="#link3"><i class="fas fa-link icon"></i>Link 3</a>
-    <a href="#link4"><i class="fas fa-link icon"></i>Link 4</a>
+    <a href="https://tinyhost.pw/list/LkNOVX6Lw"><i class="fas fa-star link-icon"></i>Horóscopo Diário</a>
+    <a href="https://tinyhost.pw/list/6CbfnVhUB"><i class="fas fa-male link-icon"></i>Nomes Masculinos</a>
+    <a href="https://tinyhost.pw/list/8DjfKjGHR"><i class="fas fa-female link-icon"></i>Nomes Femininos</a>
+    <a href="https://tinyhost.pw/list/9HfgKjWKP"><i class="fas fa-film link-icon"></i>Filmes</a>
+    <a href="https://tinyhost.pw/list/0KlfgMTHS"><i class="fas fa-music link-icon"></i>Músicas</a>
     <footer>
         &copy; 2024
     </footer>
 </body>
 </html>
-```
-
-Neste código, adicionei ícones usando a biblioteca Font Awesome e ajustei os estilos para torná-lo mais moderno. Agora, os links têm ícones e um efeito de escala ao passar o mouse.
