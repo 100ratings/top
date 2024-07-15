@@ -1,3 +1,6 @@
+Claro, vou adicionar ícones e modernizar ainda mais o design. Aqui está o código atualizado:
+
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 100 Ratings</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -38,10 +42,14 @@
             background-color: #4a90e2;
             border-radius: 25px;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         a:hover {
             background-color: #357ab7;
+            transform: scale(1.05);
+        }
+        .icon {
+            margin-right: 8px;
         }
         footer {
             margin-top: 2em;
@@ -53,12 +61,15 @@
 <body>
     <h1>Top 100 Avaliações</h1>
     <p>Aqui você encontra os top 100 em filmes, músicas e nomes.</p>
-    <a href="https://tinyhost.pw/list/6CbfnVhUB">Nomes Masculinos</a>
-    <a href="https://tinyhost.pw/list/LkNOVX6Lw">Horóscopo Diário</a>
-    <a href="#link3">Link 3</a>
-    <a href="#link4">Link 4</a>
+    <a href="https://tinyhost.pw/list/6CbfnVhUB"><i class="fas fa-male icon"></i>Nomes Masculinos</a>
+    <a href="https://tinyhost.pw/list/LkNOVX6Lw"><i class="fas fa-horoscope icon"></i>Horóscopo Diário</a>
+    <a href="#link3"><i class="fas fa-link icon"></i>Link 3</a>
+    <a href="#link4"><i class="fas fa-link icon"></i>Link 4</a>
     <footer>
         &copy; 2024
     </footer>
 </body>
 </html>
+```
+
+Neste código, adicionei ícones usando a biblioteca Font Awesome e ajustei os estilos para torná-lo mais moderno. Agora, os links têm ícones e um efeito de escala ao passar o mouse.
