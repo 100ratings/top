@@ -3,16 +3,105 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-  <link href="https://raw.githubusercontent.com/100ratings/top/main/general.css" rel="stylesheet">
-  <link href="https://raw.githubusercontent.com/100ratings/top/main/main.css" rel="stylesheet">
   <title>Top Listas por Categoria</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    #header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+    #header .inner {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+    }
+    #logo, #home {
+      height: 24px;
+    }
+    #content {
+      padding: 20px 10px;
+    }
+    #content .inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    #blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .block {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .block img {
+      height: 48px;
+      margin-right: 10px;
+    }
+    .firstdetails h2 {
+      margin: 0 0 5px 0;
+      font-size: 1.4em;
+    }
+    .firstdetails p {
+      margin: 0;
+      font-size: 0.95em;
+      color: #666;
+    }
+    .selectblock {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      justify-content: space-between;
+      transition: background 0.2s;
+    }
+    .selectblock:hover {
+      background: #f0f0f0;
+    }
+    .selectblock .icon {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+    .selectblock span {
+      flex-grow: 1;
+      font-size: 1.1em;
+    }
+    .selectblock .right {
+      font-size: 18px;
+      color: #999;
+    }
+    #footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
   <div id="header">
     <div class="inner">
-      <a href="/"><img src="https://raw.githubusercontent.com/100ratings/top/main/img/logo.png" id="logo"></a>
-      <a href="/"><img src="https://raw.githubusercontent.com/100ratings/top/main/img/home.png" id="home"></a>
+      <span id="logo">⭐</span>
+      <span id="home">🏠</span>
     </div>
   </div>
 
@@ -20,7 +109,7 @@
     <div class="inner">
       <div id="blocks">
         <div class="block" id="first">
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/star.svg" id="firstimage">
+          <span style="font-size: 2em; margin-right: 10px;">🌟</span>
           <div class="firstdetails">
             <h2>Top Listas</h2>
             <p>Listas temáticas com sugestões, nomes e mais.</p>
@@ -28,45 +117,39 @@
         </div>
 
         <a href="https://tinyhost.pw/list/qhaVxnfY9" class="selectblock">
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/paw.svg" class="icon">
+          <span class="icon">🐻</span>
           <span>Pelúcia</span>
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/right.svg" class="right">
+          <span class="right">›</span>
         </a>
         <a href="https://tinyhost.pw/list/s32vz5JVg" class="selectblock">
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/boy.svg" class="icon">
+          <span class="icon">👦</span>
           <span>Masculinos</span>
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/right.svg" class="right">
+          <span class="right">›</span>
         </a>
         <a href="https://tinyhost.pw/list/JbEOC9haJ" class="selectblock">
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/girl.svg" class="icon">
+          <span class="icon">👧</span>
           <span>Femininos</span>
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/right.svg" class="right">
+          <span class="right">›</span>
         </a>
         <a href="https://tinyhost.pw/list/FmE3h5yLZ" class="selectblock">
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/clapperboard.png" class="icon">
+          <span class="icon">🎬</span>
           <span>Filmes</span>
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/right.svg" class="right">
+          <span class="right">›</span>
         </a>
         <a href="https://tinyhost.pw/list/LkNOVX6Lw" class="selectblock">
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/moon.svg" class="icon">
+          <span class="icon">🌙</span>
           <span>Horóscopo</span>
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/right.svg" class="right">
+          <span class="right">›</span>
         </a>
         <a href="https://tinyhost.pw/list/1VovG0CPv" class="selectblock">
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/card.svg" class="icon">
+          <span class="icon">🃏</span>
           <span>Cartomancia</span>
-          <img src="https://raw.githubusercontent.com/100ratings/top/main/img/right.svg" class="right">
+          <span class="right">›</span>
         </a>
       </div>
     </div>
   </div>
 
-  <div id="footer"></div>
-
-  <style>
-    .firstdetails p {
-      display: none;
-    }
-  </style>
+  <div id="footer">&copy; 2025</div>
 </body>
 </html>
