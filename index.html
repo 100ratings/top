@@ -16,9 +16,9 @@
     }
 
     #header {
-      background: #fff;
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
+      background: #4a90e2;
+      color: white;
+      padding: 12px 0;
     }
 
     #header .inner {
@@ -27,7 +27,20 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 10px;
+      padding: 0 12px;
+    }
+
+    #header .title {
+      font-size: 1.2em;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    #header .home-icon {
+      color: white;
+      font-size: 1.4em;
     }
 
     #content {
@@ -90,7 +103,7 @@
     .selectblock .icon {
       font-size: 1.4em;
       margin-right: 12px;
-      color: #4a90e2;
+      color: #000;
     }
 
     .selectblock span {
@@ -113,8 +126,10 @@
 <body>
   <div id="header">
     <div class="inner">
-      <span style="font-size: 1.5em; color: #FFD700;"><i class="fas fa-star"></i></span>
-      <span style="font-size: 1.3em;"><strong>Top Listas</strong></span>
+      <div class="title">
+        <i class="fas fa-home home-icon"></i>
+        100 Ratings
+      </div>
     </div>
   </div>
 
