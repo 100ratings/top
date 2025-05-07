@@ -1,97 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Listas por Categoria</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/100ratings/top/main/star.png" type="image/png"> <!-- Ícone adicionado -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-            color: #4a90e2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding-top: 2em; /* Add padding to ensure space for the icon */
-        }
-        h1 .icon {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            color: #FFD700;
-            font-size: 1.5em;
-        }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 1em;
-            color: #666;
-        }
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
-            font-size: 1.2em;
-            color: #fff;
-            background-color: #4a90e2;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        a:hover {
-            background-color: #357ab7;
-            transform: scale(1.05);
-        }
-        .link-icon {
-            margin-right: 10px;
-        }
-        footer {
-            margin-top: 1em;
-            font-size: 0.9em;
-            color: #999;
-        }
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
-            }
-            p {
-                font-size: 1em;
-            }
-            a {
-                padding: 12px 20px;
-                font-size: 1.1em;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+  <title>Top Listas por Categoria</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/100ratings/top/main/star.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #f5f5f5;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #333;
+    }
+
+    #header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    #header .inner {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+    }
+
+    #content {
+      padding: 30px 10px;
+    }
+
+    #content .inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .block {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+    }
+
+    .firstdetails h2 {
+      margin: 0 0 5px 0;
+      font-size: 1.5em;
+    }
+
+    .firstdetails p {
+      margin: 0;
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    .selectblock {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: #333;
+      padding: 15px;
+      transition: background 0.2s;
+    }
+
+    .selectblock:hover {
+      background: #f0f0f0;
+    }
+
+    .selectblock .left {
+      display: flex;
+      align-items: center;
+    }
+
+    .selectblock .icon {
+      font-size: 1.4em;
+      margin-right: 12px;
+      color: #4a90e2;
+    }
+
+    .selectblock span {
+      font-size: 1.1em;
+    }
+
+    .selectblock .right {
+      font-size: 1.1em;
+      color: #aaa;
+    }
+
+    #footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-    <h1><i class="fas fa-star icon"></i>Top Listas por Categoria</h1>
-    <p>Listas organizadas por tema com sugestões, nomes e conteúdos variados.</p>
-    <a href="https://tinyhost.pw/list/qhaVxnfY9"><i class="fas fa-paw link-icon"></i>Nomes p/ Pelúcia</a>
-    <a href="https://tinyhost.pw/list/s32vz5JVg"><i class="fas fa-male link-icon"></i>Nomes Masculinos</a>
-    <a href="https://tinyhost.pw/list/JbEOC9haJ"><i class="fas fa-female link-icon"></i>Nomes Femininos</a>
-    <a href="https://tinyhost.pw/list/FmE3h5yLZ"><i class="fas fa-film link-icon"></i>Filmes</a>
-    <a href="https://tinyhost.pw/list/LkNOVX6Lw"><i class="fas fa-moon link-icon"></i>Horóscopo Diário</a>
-    <a href="https://tinyhost.pw/list/1VovG0CPv"><i class="fas fa-star-and-crescent link-icon"></i></i>Cartomancia</a>
-    <footer>
-        &copy; 2025
-    </footer>
+  <div id="header">
+    <div class="inner">
+      <span style="font-size: 1.5em; color: #FFD700;"><i class="fas fa-star"></i></span>
+      <span style="font-size: 1.3em;"><strong>Top Listas</strong></span>
+    </div>
+  </div>
+
+  <div id="content">
+    <div class="inner">
+      <div id="blocks">
+        <div class="block">
+          <div class="firstdetails">
+            <h2>Top Listas por Categoria</h2>
+            <p>Listas organizadas por tema com sugestões e conteúdos variados.</p>
+          </div>
+        </div>
+
+        <a href="https://tinyhost.pw/list/qhaVxnfY9" class="selectblock">
+          <div class="left"><i class="fas fa-paw icon"></i><span>Pelúcia</span></div>
+          <div class="right"><i class="fas fa-chevron-right"></i></div>
+        </a>
+
+        <a href="https://tinyhost.pw/list/s32vz5JVg" class="selectblock">
+          <div class="left"><i class="fas fa-male icon"></i><span>Masculinos</span></div>
+          <div class="right"><i class="fas fa-chevron-right"></i></div>
+        </a>
+
+        <a href="https://tinyhost.pw/list/JbEOC9haJ" class="selectblock">
+          <div class="left"><i class="fas fa-female icon"></i><span>Femininos</span></div>
+          <div class="right"><i class="fas fa-chevron-right"></i></div>
+        </a>
+
+        <a href="https://tinyhost.pw/list/FmE3h5yLZ" class="selectblock">
+          <div class="left"><i class="fas fa-film icon"></i><span>Filmes</span></div>
+          <div class="right"><i class="fas fa-chevron-right"></i></div>
+        </a>
+
+        <a href="https://tinyhost.pw/list/LkNOVX6Lw" class="selectblock">
+          <div class="left"><i class="fas fa-moon icon"></i><span>Horóscopo Diário</span></div>
+          <div class="right"><i class="fas fa-chevron-right"></i></div>
+        </a>
+
+        <a href="https://tinyhost.pw/list/1VovG0CPv" class="selectblock">
+          <div class="left"><i class="fas fa-star-and-crescent icon"></i><span>Cartomancia</span></div>
+          <div class="right"><i class="fas fa-chevron-right"></i></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">&copy; 2025</div>
 </body>
 </html>
