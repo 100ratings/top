@@ -105,7 +105,7 @@
       text-decoration: none;
       color: #333;
       padding: 15px;
-      transition: background 0.2s;
+      transition: background 0.2s ease, transform 0.1s ease;
     }
 
     .selectblock:first-of-type {
@@ -114,6 +114,10 @@
 
     .selectblock:hover {
       background: #f0f0f0;
+    }
+
+    .selectblock:active {
+      transform: translateX(2px);
     }
 
     .selectblock .left {
@@ -137,19 +141,44 @@
     }
 
     #footer {
-  max-width: 600px;
-  margin: 20px auto 10px auto;
-  text-align: right;
-  font-size: 0.85em;
-  color: #666;
-  padding: 0 10px;
-}
+      max-width: 600px;
+      margin: 20px auto 10px auto;
+      text-align: right;
+      font-size: 0.85em;
+      color: #666;
+      padding: 0 10px;
+    }
 
     @media (max-width: 600px) {
       #footer {
         text-align: center;
-        right: 0;
-        left: 0;
+      }
+    }
+
+    /* 🌙 Dark mode support */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #1c1c1c;
+        color: #f5f5f5;
+      }
+      .block,
+      .selectblock {
+        background: #2a2a2a;
+        color: #f5f5f5;
+      }
+      .selectblock:hover {
+        background: #333333;
+      }
+      .firstdetails p,
+      #footer {
+        color: #aaaaaa;
+      }
+      .icon,
+      .firstdetails i.fa-star {
+        color: #f5f5f5;
+      }
+      .selectblock .right {
+        color: #888;
       }
     }
   </style>
@@ -174,32 +203,32 @@
           </div>
         </div>
 
-        <a href="https://tinyhost.pw/list/qhaVxnfY9" class="selectblock">
+        <a href="https://tinyhost.pw/list/qhaVxnfY9" class="selectblock" title="Sugestões de nomes para pelúcias e bichinhos">
           <div class="left"><i class="fas fa-paw icon"></i><span>Pelúcia</span></div>
           <div class="right"><i class="fas fa-chevron-right"></i></div>
         </a>
 
-        <a href="https://tinyhost.pw/list/s32vz5JVg" class="selectblock">
+        <a href="https://tinyhost.pw/list/s32vz5JVg" class="selectblock" title="Nomes próprios masculinos variados">
           <div class="left"><i class="fas fa-male icon"></i><span>Masculinos</span></div>
           <div class="right"><i class="fas fa-chevron-right"></i></div>
         </a>
 
-        <a href="https://tinyhost.pw/list/JbEOC9haJ" class="selectblock">
+        <a href="https://tinyhost.pw/list/JbEOC9haJ" class="selectblock" title="Nomes próprios femininos variados">
           <div class="left"><i class="fas fa-female icon"></i><span>Femininos</span></div>
           <div class="right"><i class="fas fa-chevron-right"></i></div>
         </a>
 
-        <a href="https://tinyhost.pw/list/FmE3h5yLZ" class="selectblock">
+        <a href="https://tinyhost.pw/list/FmE3h5yLZ" class="selectblock" title="Sugestões de filmes para assistir">
           <div class="left"><i class="fas fa-film icon"></i><span>Filmes</span></div>
           <div class="right"><i class="fas fa-chevron-right"></i></div>
         </a>
 
-        <a href="https://tinyhost.pw/list/LkNOVX6Lw" class="selectblock">
+        <a href="https://tinyhost.pw/list/LkNOVX6Lw" class="selectblock" title="Previsões astrológicas do dia">
           <div class="left"><i class="fas fa-moon icon"></i><span>Horóscopo Diário</span></div>
           <div class="right"><i class="fas fa-chevron-right"></i></div>
         </a>
 
-        <a href="https://tinyhost.pw/list/1VovG0CPv" class="selectblock">
+        <a href="https://tinyhost.pw/list/1VovG0CPv" class="selectblock" title="Significados das cartas de baralho e tarô">
           <div class="left"><i class="fas fa-star-and-crescent icon"></i><span>Cartomancia</span></div>
           <div class="right"><i class="fas fa-chevron-right"></i></div>
         </a>
